@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "idat.gomez.entregasegura"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "idat.gomez.entregasegura"
