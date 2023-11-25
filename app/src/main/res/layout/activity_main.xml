@@ -9,11 +9,34 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="179dp"
-        android:layout_height="198dp"
+        android:layout_width="224dp"
+        android:layout_height="220dp"
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo1" />
+        app:layout_constraintVertical_bias="0.387"
+        app:srcCompat="@drawable/logoes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FROM"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="580dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EntregaSeguraApp"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="611dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
