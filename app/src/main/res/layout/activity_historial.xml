@@ -16,7 +16,7 @@
 
 
         <TextView
-            
+
             android:id="@+id/textView3"
             :layout_editor_absoluteY="644dp"
             android:layout_width="wrap_content"
@@ -24,130 +24,71 @@
             android:layout_gravity="bottom"
             android:layout_margin="20dp"
             android:layout_marginBottom="640dp"
-            android:text="Datos de Envio"
+            android:text="Historial"
             android:textColor="@color/white"
             android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="35dp"
+            android:src="@drawable/filtro" />
+
     </androidx.cardview.widget.CardView>
 
+    <TextView
+        android:id="@+id/EntregasP"
+        android:layout_width="204dp"
+        android:layout_height="33dp"
+        android:text="Octubre 2023"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="96dp" />
+
     <androidx.cardview.widget.CardView
-        android:layout_width="322dp"
-        android:layout_height="500dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="135dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        >
+        android:layout_width="365dp"
+        android:layout_height="75dp"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="135dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            >
+            android:layout_width="367dp"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/text1"
-                android:layout_width="244dp"
+                android:id="@+id/txtCodP"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Código del Paquete :"
+                android:text="Cod. Paquete: 123456789"
+                android:textSize="16dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/codPaquete"
-                android:layout_width="244dp"
-                android:layout_height="37dp"
-                android:text="123456789" />
-
-            <TextView
-                android:id="@+id/text2"
-                android:layout_width="244dp"
+                android:id="@+id/NombreC"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre del Trabajador :"
-                android:textStyle="bold" />
+                android:layout_below="@id/txtCodP"
+                android:text="Josefina Palante Torres"
+                android:textSize="16dp"
+
+                />
 
             <TextView
-                android:id="@+id/NombreT"
-                android:layout_width="244dp"
-                android:layout_height="35dp"
-                android:text="Santiago Nunez Ventura" />
+                android:id="@+id/fechaEnt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/NombreC"
+                android:text="20 de Sep.2023 - 5:30pm"
+                android:textSize="15dp" />
 
-            <TextView
-                android:id="@+id/text3"
-                android:layout_width="244dp"
-                android:layout_height="wrap_content"
-                android:text="Cargo del Trabajador :"
-                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/cargoT"
-                android:layout_width="244dp"
-                android:layout_height="37dp"
-                android:text="Ayudante" />
-
-            <TextView
-                android:id="@+id/text4"
-                android:layout_width="244dp"
-                android:layout_height="wrap_content"
-                android:text="DNI: "
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/DNItra"
-                android:layout_width="244dp"
-                android:layout_height="35dp"
-                android:text="76543218 " />
-
-            <TextView
-                android:id="@+id/text5"
-                android:layout_width="244dp"
-                android:layout_height="wrap_content"
-                android:text="Direccion y Referencia:"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/direccion"
-                android:layout_width="244dp"
-                android:layout_height="41dp"
-                android:text="Av. Tupac Amaru 543" />
-
-            <TextView
-                android:id="@+id/text6"
-                android:layout_width="244dp"
-                android:layout_height="wrap_content"
-                android:text="N° Celular: "
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/celular"
-                android:layout_width="244dp"
-                android:layout_height="33dp"
-                android:text="912345874" />
-
-            <View
-                android:id="@+id/view"
-                android:layout_width="259dp"
-                android:layout_height="105dp"
-                android:background="@color/plomo" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Firmar"
-        android:backgroundTint="@color/verde"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="644dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Terminar Entrega"
-        android:backgroundTint="@color/azul"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="644dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,6 +24,13 @@
             app:srcCompat="@drawable/agunzablanco" />
     </androidx.cardview.widget.CardView>
 
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/paquete"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="108dp" />
+
     <TextView
         android:id="@+id/EntregasP"
         android:layout_width="204dp"
