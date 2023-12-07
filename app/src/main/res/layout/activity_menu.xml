@@ -10,10 +10,11 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/red"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/agunza"
@@ -24,34 +25,54 @@
             app:srcCompat="@drawable/agunzablanco" />
     </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:src="@drawable/paquete"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="108dp" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="024dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
 
-    <TextView
-        android:id="@+id/EntregasP"
-        android:layout_width="204dp"
-        android:layout_height="33dp"
-        android:text="Entregas Pendientes"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="105dp"></TextView>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/paquete" />
+
+        <TextView
+            android:id="@+id/EntregasP"
+            android:layout_width="204dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="13dp"
+            android:text="Entregas Pendientes"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="365dp"
-        android:layout_height="75dp"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="159dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <LinearLayout
-            android:layout_width="367dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="64dp"
-            android:layout_margin="4dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
@@ -60,8 +81,7 @@
                 android:layout_height="wrap_content"
                 android:text="Cod. Paquete: 123456789"
                 android:textSize="16dp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/NombreC"
@@ -83,6 +103,16 @@
 
 
         </LinearLayout>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_send"
+                app:tint="#00695C">
+
+            </ImageButton>
+        </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
 

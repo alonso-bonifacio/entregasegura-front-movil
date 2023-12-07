@@ -8,53 +8,57 @@
     tools:context=".Perfil_Activity">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView9"
         android:layout_width="match_parent"
         android:layout_height="330dp"
         app:cardBackgroundColor="@color/red"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-6dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            android:id="@+id/textView3"
-            :layout_editor_absoluteY="644dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            <TextView
 
-            android:layout_marginLeft="170dp"
-            android:text="Perfil"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:textSize="25dp"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"
 
-            />
+                />
 
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
 
-            android:background="@drawable/jose"
-            android:src="@drawable/jose" />
+                android:background="@drawable/jose"
+                android:src="@drawable/jose" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jose Francico Garcia Veiga"
-            android:textSize="18dp"
-            android:textColor="@color/white"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="280dp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jose Francico Garcia Veiga"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
         android:layout_width="365dp"
         android:layout_height="55dp"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="350dp"
-        app:cardCornerRadius="20dp">
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView9">
 
         <LinearLayout
             android:layout_width="359dp"
@@ -66,29 +70,27 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:src="@drawable/en"
                 android:layout_marginLeft="20dp"
-                />
+                android:src="@drawable/en" />
 
             <TextView
                 android:id="@+id/textDNI"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txtCodP"
-                android:text="DNI"
-                android:textSize="18dp"
-                android:textColor="@color/azul"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
-                />
+                android:text="DNI"
+                android:textColor="@color/azul"
+                android:textSize="18dp" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="165dp"
                 android:layout_height="30dp"
-                app:cardBackgroundColor="@color/plomo"
-                app:cardCornerRadius="10dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="80dp"
+                app:cardBackgroundColor="@color/plomo"
+                app:cardCornerRadius="10dp"
                 tools:layout_editor_absoluteX="70dp"
                 tools:layout_editor_absoluteY="459dp"
 
@@ -110,11 +112,14 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView11"
         android:layout_width="365dp"
         android:layout_height="55dp"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="420dp"
-        app:cardCornerRadius="20dp">
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView10">
 
         <LinearLayout
             android:layout_width="359dp"
@@ -126,29 +131,27 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:src="@drawable/telefono"
                 android:layout_marginLeft="20dp"
-                />
+                android:src="@drawable/telefono" />
 
             <TextView
                 android:id="@+id/textcelular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txtCodP"
-                android:text="N° Celular"
-                android:textSize="18dp"
-                android:textColor="@color/azul"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
-                />
+                android:text="N° Celular"
+                android:textColor="@color/azul"
+                android:textSize="18dp" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="165dp"
                 android:layout_height="30dp"
-                app:cardBackgroundColor="@color/plomo"
-                app:cardCornerRadius="10dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="30dp"
+                app:cardBackgroundColor="@color/plomo"
+                app:cardCornerRadius="10dp"
                 tools:layout_editor_absoluteX="70dp"
                 tools:layout_editor_absoluteY="459dp"
 
@@ -170,11 +173,14 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView12"
         android:layout_width="365dp"
         android:layout_height="55dp"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="490dp"
-        app:cardCornerRadius="20dp">
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView11">
 
         <LinearLayout
             android:layout_width="359dp"
@@ -186,29 +192,27 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:src="@drawable/sobrep"
                 android:layout_marginLeft="20dp"
-                />
+                android:src="@drawable/sobrep" />
 
             <TextView
                 android:id="@+id/textCorreo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txtCodP"
-                android:text="Correo"
-                android:textSize="18dp"
-                android:textColor="@color/azul"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
-                />
+                android:text="Correo"
+                android:textColor="@color/azul"
+                android:textSize="18dp" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="165dp"
                 android:layout_height="30dp"
-                app:cardBackgroundColor="@color/plomo"
-                app:cardCornerRadius="10dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="55dp"
+                app:cardBackgroundColor="@color/plomo"
+                app:cardCornerRadius="10dp"
                 tools:layout_editor_absoluteX="70dp"
                 tools:layout_editor_absoluteY="459dp"
 
@@ -233,11 +237,15 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cerrar Sesión"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="@color/red"
 
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="600dp"
-        />
+        android:text="Cerrar Sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView12"
+        app:layout_constraintVertical_bias="0.27" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
