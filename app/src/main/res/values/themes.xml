@@ -5,5 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Entregasegura" parent="Base.Theme.Entregasegura" />
+    <style name="SplashTheme" parent="Base.Theme.Entregasegura">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
 </resources>

@@ -77,7 +77,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/Ingresar"
+        android:id="@+id/btnIngresar"
         android:layout_width="153dp"
         android:layout_height="59dp"
         android:backgroundTint="#1940CD"
