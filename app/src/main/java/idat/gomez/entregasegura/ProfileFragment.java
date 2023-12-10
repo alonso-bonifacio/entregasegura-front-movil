@@ -9,6 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import idat.gomez.entregasegura.databinding.FragmentProfileBinding;
 
@@ -25,6 +29,9 @@ public class ProfileFragment extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     FragmentProfileBinding binding;
+    FirebaseAuth auth;
+    Button btnCerrar;
+    FirebaseUser user;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -63,6 +70,8 @@ public class ProfileFragment extends Fragment {
         }
 
 
+
+
     }
 
     @Override
@@ -72,8 +81,18 @@ public class ProfileFragment extends Fragment {
         binding = FragmentProfileBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
+        auth = FirebaseAuth.getInstance();
         Button btnCerrar = binding.btnCerrar;
+        user = auth.getCurrentUser();
+
+        if(user == null) {
+            Intent i = new Intent(getActivity(),Login_Activity.class);
+            startActivity(i);
+        }
+
         btnCerrar.setOnClickListener(v -> {
+
+            FirebaseAuth.getInstance().signOut();
             Intent i = new Intent(getActivity(),Login_Activity.class);
             startActivity(i);
         });

@@ -33,7 +33,7 @@
 
 
         <EditText
-            android:id="@+id/etextCorreo"
+            android:id="@+id/etMail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Email"
@@ -59,7 +59,7 @@
 
 
         <EditText
-            android:id="@+id/etextPass"
+            android:id="@+id/etPass"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="textPassword"

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "59256778360",
+    "project_id": "entrega-segura-78f02",
+    "storage_bucket": "entrega-segura-78f02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59256778360:android:a0db3810f9d4aa6884078d",
+        "android_client_info": {
+          "package_name": "idat.gomez.entregasegura"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD62WQwudrcrYdzWbrGwBZvmDvdo89qa2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
