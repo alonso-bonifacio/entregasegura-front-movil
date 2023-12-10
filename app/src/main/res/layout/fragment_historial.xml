@@ -30,7 +30,7 @@
 
                     android:id="@+id/textView3"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_margin="20dp"
                     android:layout_weight="1"
                     android:text="Historial"
@@ -67,6 +67,7 @@
             android:layout_height="75dp"
             android:layout_marginStart="23dp"
             android:layout_marginEnd="23dp"
+            app:cardBackgroundColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -86,6 +87,7 @@
                     android:layout_height="wrap_content"
                     android:text="Cod. Paquete: 123456789"
                     android:textSize="16dp"
+                    android:textColor="#393838"
                     android:textStyle="bold" />
 
                 <TextView
@@ -93,6 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/txtCodP"
+                    android:textColor="@color/black"
                     android:text="Josefina Palante Torres"
                     android:textSize="16dp"
 
@@ -103,6 +106,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_below="@id/NombreC"
+                    android:textColor="@color/black"
                     android:text="20 de Sep.2023 - 5:30pm"
                     android:textSize="15sp" />
 

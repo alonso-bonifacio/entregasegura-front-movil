@@ -50,6 +50,7 @@
                     android:layout_height="wrap_content"
                     android:text="Jose Francico Garcia Veiga"
                     android:textColor="@color/white"
+                    android:textStyle="bold"
                     android:textSize="18dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -60,6 +61,7 @@
             android:layout_height="55dp"
             android:layout_marginTop="40dp"
             app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView9">
@@ -105,6 +107,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textColor="@color/black"
                         android:text="702997177"
                         android:textSize="17dp" />
 
@@ -121,6 +124,7 @@
             android:layout_height="55dp"
             android:layout_marginTop="20dp"
             app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView10">
@@ -166,6 +170,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textColor="@color/black"
                         android:text="987654321"
                         android:textSize="17dp" />
 
@@ -181,6 +186,7 @@
             android:layout_width="365dp"
             android:layout_height="55dp"
             android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -227,6 +233,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textColor="@color/black"
                         android:text="Abv@gmail.com"
                         android:textSize="17dp" />
 
@@ -239,18 +246,19 @@
 
         <Button
             android:id="@+id/btnCerrar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginBottom="60dp"
             android:backgroundTint="@color/red"
-
+            android:textColor="@color/white"
             android:text="Cerrar Sesión"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView12"
-            app:layout_constraintVertical_bias="0.27" />
+            app:layout_constraintVertical_bias="0.27"
+            android:layout_width="160dp"
+            android:layout_height="59dp"
+            android:textSize="18sp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

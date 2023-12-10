@@ -60,6 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/white"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -85,6 +86,7 @@
                         android:layout_height="wrap_content"
                         android:text="Cod. Paquete: 123456789"
                         android:textSize="16dp"
+                        android:textColor="#393838"
                         android:textStyle="bold" />
 
                     <TextView
@@ -92,6 +94,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/txtCodP"
+                        android:textColor="@color/black"
                         android:text="Josefina Palante Torres"
                         android:textSize="16dp"
 
@@ -103,6 +106,7 @@
                         android:layout_height="match_parent"
                         android:layout_below="@id/NombreC"
                         android:text="DNI: 76543210"
+                        android:textColor="@color/black"
                         android:textSize="16dp" />
 
 
@@ -112,6 +116,7 @@
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
                     app:srcCompat="@android:drawable/ic_menu_send"
+                    android:backgroundTint="#DDDDDD"
                     app:tint="#00695C">
 
                 </ImageButton>
