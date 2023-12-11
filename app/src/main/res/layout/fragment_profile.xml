@@ -41,14 +41,15 @@
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="200dp"
-
+                    android:id="@+id/profileFoto"
                     android:background="@drawable/jose"
                     android:src="@drawable/jose" />
 
                 <TextView
+                    android:id="@+id/profileNombre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Jose Francico Garcia Veiga"
+                    android:text="Cargando ..."
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:textSize="18dp" />
@@ -103,12 +104,12 @@
                     >
 
                     <TextView
-                        android:id="@+id/DNI"
+                        android:id="@+id/profileDni"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textColor="@color/black"
-                        android:text="702997177"
+                        android:text="Cagando ..."
                         android:textSize="17dp" />
 
                 </androidx.cardview.widget.CardView>
@@ -166,12 +167,12 @@
                     >
 
                     <TextView
-                        android:id="@+id/celular"
+                        android:id="@+id/profileNumCelular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textColor="@color/black"
-                        android:text="987654321"
+                        android:text="Cargando ..."
                         android:textSize="17dp" />
 
                 </androidx.cardview.widget.CardView>
@@ -217,10 +218,10 @@
                     android:textSize="18dp" />
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="165dp"
+                    android:layout_width="215dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="55dp"
+                    android:layout_marginLeft="10dp"
                     app:cardBackgroundColor="@color/plomo"
                     app:cardCornerRadius="10dp"
                     tools:layout_editor_absoluteX="70dp"
@@ -229,12 +230,13 @@
                     >
 
                     <TextView
-                        android:id="@+id/correo"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/profileCorreo"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:layout_gravity="center"
                         android:textColor="@color/black"
-                        android:text="Abv@gmail.com"
+                        android:text="Cargando ..."
                         android:textSize="17dp" />
 
                 </androidx.cardview.widget.CardView>
