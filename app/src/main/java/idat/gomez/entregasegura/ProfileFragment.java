@@ -113,6 +113,7 @@ public class ProfileFragment extends Fragment {
                 profileDni.setText(usuarioRf.getDni());
                 profileNumCelular.setText(usuarioRf.getNumeroCelular());
                 profileCorreo.setText(user.getEmail());
+                ImageViewExtension.fromUrl(profileFoto, usuarioRf.getFoto());
             } else {
                 cargarDatos(uid);
             }
@@ -147,6 +148,7 @@ public class ProfileFragment extends Fragment {
                 profileDni.setText(usuarioRf.getDni());
                 profileNumCelular.setText(usuarioRf.getNumeroCelular());
                 profileCorreo.setText(user.getEmail());
+                ImageViewExtension.fromUrl(profileFoto, usuarioRf.getFoto());
 
             }
 
