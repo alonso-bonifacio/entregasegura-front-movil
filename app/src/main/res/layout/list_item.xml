@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCodPaquete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cod. Paquete: 123456789"
+                android:textSize="16dp"
+                android:textColor="#393838"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtNombreTrabajador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCodP"
+                android:textColor="@color/black"
+                android:text="Josefina Palante Torres"
+                android:textSize="16dp"
+
+                />
+
+            <TextView
+                android:id="@+id/txtDniTrabajador"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/NombreC"
+                android:text="DNI: 76543210"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@android:drawable/ic_menu_send"
+            android:backgroundTint="#DDDDDD"
+            app:tint="#00695C"
+            android:contentDescription="Ver detalle">
+
+        </ImageButton>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -45,6 +45,7 @@
         android:id="@+id/cardView2"
         android:layout_width="322dp"
         android:layout_height="500dp"
+        app:cardBackgroundColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,6 +61,7 @@
                 android:id="@+id/text1"
                 android:layout_width="244dp"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="Código del Paquete :"
                 android:textStyle="bold" />
 
@@ -67,6 +69,7 @@
                 android:id="@+id/codPaquete"
                 android:layout_width="244dp"
                 android:layout_height="37dp"
+                android:textColor="@color/black"
                 android:text="123456789" />
 
             <TextView
@@ -74,10 +77,12 @@
                 android:layout_width="244dp"
                 android:layout_height="wrap_content"
                 android:text="Nombre del Trabajador :"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/NombreT"
+                android:textColor="@color/black"
                 android:layout_width="244dp"
                 android:layout_height="35dp"
                 android:text="Santiago Nunez Ventura" />
@@ -85,6 +90,7 @@
             <TextView
                 android:id="@+id/text3"
                 android:layout_width="244dp"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:text="Cargo del Trabajador :"
                 android:textStyle="bold" />
@@ -92,12 +98,14 @@
             <TextView
                 android:id="@+id/cargoT"
                 android:layout_width="244dp"
+                android:textColor="@color/black"
                 android:layout_height="37dp"
                 android:text="Ayudante" />
 
             <TextView
                 android:id="@+id/text4"
                 android:layout_width="244dp"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:text="DNI: "
                 android:textStyle="bold" />
@@ -106,6 +114,7 @@
                 android:id="@+id/DNItra"
                 android:layout_width="244dp"
                 android:layout_height="35dp"
+                android:textColor="@color/black"
                 android:text="76543218 " />
 
             <TextView
@@ -113,18 +122,21 @@
                 android:layout_width="244dp"
                 android:layout_height="wrap_content"
                 android:text="Direccion y Referencia:"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/direccion"
                 android:layout_width="244dp"
                 android:layout_height="41dp"
+                android:textColor="@color/black"
                 android:text="Av. Tupac Amaru 543" />
 
             <TextView
                 android:id="@+id/text6"
                 android:layout_width="244dp"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="N° Celular: "
                 android:textStyle="bold" />
 
@@ -132,6 +144,7 @@
                 android:id="@+id/celular"
                 android:layout_width="244dp"
                 android:layout_height="33dp"
+                android:textColor="@color/black"
                 android:text="912345874" />
 
             <View
@@ -151,6 +164,7 @@
         android:layout_marginBottom="44dp"
         android:backgroundTint="@color/verde"
         android:text="Firmar"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -161,6 +175,7 @@
         android:layout_marginBottom="44dp"
         android:backgroundTint="@color/azul"
         android:text="Terminar Entrega"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.627"
