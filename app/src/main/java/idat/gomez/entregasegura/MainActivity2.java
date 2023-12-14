@@ -18,7 +18,9 @@ public class MainActivity2 extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         binding = ActivityMain2Binding.inflate(getLayoutInflater());
+
         setContentView(binding.getRoot());
+        binding.bottomNavigationView.setSelectedItemId(R.id.home);
         reemplazarFragment(new HomeFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="@color/plomo"
     tools:context=".DatosEnvio">
@@ -26,6 +27,7 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="20dp"
+                android:id="@+id/btnRegresar"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/flecha" />
 
@@ -35,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
+                android:textStyle="bold"
                 android:text="Datos de Envio"
                 android:textColor="@color/white"
                 android:textSize="25dp" />
@@ -44,7 +47,9 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="322dp"
-        android:layout_height="500dp"
+        android:layout_height="550dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp"
         app:cardBackgroundColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,12 +68,14 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:text="Código del Paquete :"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/codPaquete"
+                android:id="@+id/codigoPaquete"
                 android:layout_width="244dp"
-                android:layout_height="37dp"
+                android:layout_height="40dp"
+                android:textSize="18sp"
                 android:textColor="@color/black"
                 android:text="123456789" />
 
@@ -77,14 +84,16 @@
                 android:layout_width="244dp"
                 android:layout_height="wrap_content"
                 android:text="Nombre del Trabajador :"
+                android:textSize="18sp"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/NombreT"
+                android:id="@+id/nombreTrabajador"
                 android:textColor="@color/black"
                 android:layout_width="244dp"
-                android:layout_height="35dp"
+                android:textSize="18sp"
+                android:layout_height="40dp"
                 android:text="Santiago Nunez Ventura" />
 
             <TextView
@@ -92,14 +101,16 @@
                 android:layout_width="244dp"
                 android:textColor="@color/black"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
                 android:text="Cargo del Trabajador :"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/cargoT"
+                android:id="@+id/cargoTrabajador"
                 android:layout_width="244dp"
                 android:textColor="@color/black"
-                android:layout_height="37dp"
+                android:textSize="18sp"
+                android:layout_height="40dp"
                 android:text="Ayudante" />
 
             <TextView
@@ -107,14 +118,16 @@
                 android:layout_width="244dp"
                 android:textColor="@color/black"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
                 android:text="DNI: "
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/DNItra"
+                android:id="@+id/dniTrabajador"
                 android:layout_width="244dp"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:textColor="@color/black"
+                android:textSize="18sp"
                 android:text="76543218 " />
 
             <TextView
@@ -122,13 +135,15 @@
                 android:layout_width="244dp"
                 android:layout_height="wrap_content"
                 android:text="Direccion y Referencia:"
+                android:textSize="18sp"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/direccion"
+                android:id="@+id/direccionTrabajador"
                 android:layout_width="244dp"
-                android:layout_height="41dp"
+                android:layout_height="40dp"
+                android:textSize="18sp"
                 android:textColor="@color/black"
                 android:text="Av. Tupac Amaru 543" />
 
@@ -137,20 +152,22 @@
                 android:layout_width="244dp"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
+                android:textSize="18sp"
                 android:text="N° Celular: "
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/celular"
+                android:id="@+id/numeroCelTrabajador"
                 android:layout_width="244dp"
-                android:layout_height="33dp"
+                android:layout_height="40dp"
                 android:textColor="@color/black"
+                android:textSize="18sp"
                 android:text="912345874" />
 
             <View
-                android:id="@+id/view"
+                android:id="@+id/firmaTrabajador"
                 android:layout_width="246dp"
-                android:layout_height="98dp"
+                android:layout_height="100dp"
                 android:background="@color/plomo" />
 
         </LinearLayout>
@@ -159,8 +176,9 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
+        android:layout_height="59dp"
+        android:textSize="18sp"
+        android:layout_marginStart="38dp"
         android:layout_marginBottom="44dp"
         android:backgroundTint="@color/verde"
         android:text="Firmar"
@@ -171,7 +189,8 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="59dp"
+        android:textSize="18sp"
         android:layout_marginBottom="44dp"
         android:backgroundTint="@color/azul"
         android:text="Terminar Entrega"

@@ -156,6 +156,7 @@ public class HomeFragment extends Fragment {
         binding.listPendientes.setHasFixedSize(true);
         binding.listPendientes.setLayoutManager(new LinearLayoutManager(getContext()));
         binding.listPendientes.setAdapter(entregaAdapter);
+
     }
 
 
