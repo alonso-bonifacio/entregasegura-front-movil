@@ -90,13 +90,12 @@ public class HomeFragment extends Fragment {
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
 
+
+
         if(user == null) {
             Intent i = new Intent(getActivity(), Login_Activity.class);
             startActivity(i);
         }
-
-
-
 
         String uid = user.getUid();
         try {
@@ -109,6 +108,9 @@ public class HomeFragment extends Fragment {
         } catch (Exception e) {
             Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
         }
+
+
+
 
         return view;
     }
@@ -127,6 +129,7 @@ public class HomeFragment extends Fragment {
                                if (entregas != null){
                                    mostrarLista(entregas);
                                } else {
+                                   binding.listPendientes.setVisibility(View.INVISIBLE);
                                    Toast.makeText(getContext(), "No se encontraron entregas", Toast.LENGTH_SHORT).show();
                                }
                            }

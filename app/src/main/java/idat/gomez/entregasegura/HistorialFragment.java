@@ -15,8 +15,11 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import idat.gomez.entregasegura.databinding.FragmentHistorialBinding;
 import okhttp3.OkHttpClient;
@@ -91,6 +94,7 @@ public class HistorialFragment extends Fragment {
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
 
+
         if(user == null) {
             Intent i = new Intent(getActivity(), Login_Activity.class);
             startActivity(i);
@@ -99,6 +103,7 @@ public class HistorialFragment extends Fragment {
         String uid = user.getUid();
         try {
             recargar();
+            binding.txtEntregasMes.setText("Historial limpio");
             if (entregas != null && !recargar){
                 mostrarLista(entregas);
             } else {
@@ -109,6 +114,14 @@ public class HistorialFragment extends Fragment {
         }
 
         return view;
+    }
+
+    private String mesActual() {
+        Date fechaActual = new Date();
+        SimpleDateFormat formato = new SimpleDateFormat("MMMM yyyy", new Locale("es", "PE"));
+        String fecha = formato.format(fechaActual);
+        String cadenas = String.valueOf(fecha.charAt(0)).toUpperCase() + fecha.substring(1);
+        return cadenas;
     }
 
     private void cargarDatos(String uid) {
@@ -123,9 +136,10 @@ public class HistorialFragment extends Fragment {
                         getActivity().runOnUiThread(
                                 () -> {
                                     if (entregas != null){
+                                        binding.txtEntregasMes.setText(mesActual());
                                         mostrarLista(entregas);
                                     } else {
-                                        Toast.makeText(getContext(), "No se encontraron entregas", Toast.LENGTH_SHORT).show();
+
                                     }
                                 }
                         );
