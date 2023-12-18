@@ -39,7 +39,7 @@
                 android:id="@+id/txtNombreTrabajador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtCodP"
+                android:layout_below="@id/txtCodPaquete"
                 android:textColor="@color/black"
                 android:text="Josefina Palante Torres"
                 android:textSize="16dp"
@@ -50,7 +50,7 @@
                 android:id="@+id/txtDniTrabajador"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_below="@id/NombreC"
+                android:layout_below="@id/txtNombreTrabajador"
                 android:text="DNI: 76543210"
                 android:textColor="@color/black"
                 android:textSize="16dp" />

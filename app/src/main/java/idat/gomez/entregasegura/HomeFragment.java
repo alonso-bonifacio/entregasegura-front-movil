@@ -17,13 +17,10 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 import idat.gomez.entregasegura.databinding.FragmentHomeBinding;
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
-import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -51,6 +48,7 @@ public class HomeFragment extends Fragment {
     EntregaAdapter entregaAdapter;
 
     FirebaseUser user;
+    Boolean recargar;
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -97,9 +95,13 @@ public class HomeFragment extends Fragment {
             startActivity(i);
         }
 
+
+
+
         String uid = user.getUid();
         try {
-            if (entregas != null){
+            recargar();
+            if (entregas != null && !recargar){
                 mostrarLista(entregas);
             } else {
                 cargarDatos(uid);
@@ -143,16 +145,18 @@ public class HomeFragment extends Fragment {
     private void mostrarLista(List<Entrega> lista) {
 
         List<Entrega> listaPendientes = new ArrayList<>();
+        List<Integer> ids = new ArrayList<>();
 
-        for (Entrega item: lista) {
-            if (item.isEstaEntregado()) {
+        for (int i = 0; i < lista.size(); i++) {
+            Entrega entregaAdd = lista.get(i);
+            if(entregaAdd.isEstaEntregado()){
                 continue;
             }
-
-            listaPendientes.add(item);
+            listaPendientes.add(entregaAdd);
+            ids.add(i);
         }
 
-        entregaAdapter = new EntregaAdapter(listaPendientes);
+        entregaAdapter = new EntregaAdapter(listaPendientes, ids);
         binding.listPendientes.setHasFixedSize(true);
         binding.listPendientes.setLayoutManager(new LinearLayoutManager(getContext()));
         binding.listPendientes.setAdapter(entregaAdapter);
@@ -170,6 +174,17 @@ public class HomeFragment extends Fragment {
 
     private OkHttpClient getClienteRetrofit() {
         return new OkHttpClient.Builder().build();
+    }
+
+    private void recargar() {
+        Intent i = this.getActivity().getIntent();
+        recargar = i.getBooleanExtra("recargar", false);
+        if(recargar){
+            i.putExtra("recargar2", true);
+            i.removeExtra("recargar");
+        }
+
+
     }
 
 }

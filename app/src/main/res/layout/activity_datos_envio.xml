@@ -51,7 +51,7 @@
         app:cardCornerRadius="15dp"
         app:cardElevation="8dp"
         app:cardBackgroundColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btnFirmar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
@@ -164,17 +164,18 @@
                 android:textSize="18sp"
                 android:text="912345874" />
 
-            <View
+            <ImageView
                 android:id="@+id/firmaTrabajador"
                 android:layout_width="246dp"
                 android:layout_height="100dp"
+                android:contentDescription="Firma digital"
                 android:background="@color/plomo" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnFirmar"
         android:layout_width="wrap_content"
         android:layout_height="59dp"
         android:textSize="18sp"
@@ -187,18 +188,19 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnTerminar"
         android:layout_width="wrap_content"
         android:layout_height="59dp"
         android:textSize="18sp"
         android:layout_marginBottom="44dp"
         android:backgroundTint="@color/azul"
         android:text="Terminar Entrega"
+        android:enabled="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.627"
-        app:layout_constraintStart_toEndOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/btnFirmar" />
 
 
 

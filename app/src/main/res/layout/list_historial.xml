@@ -21,7 +21,7 @@
 
     <ImageView
         android:layout_width="80dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/round_no_crash_24"
@@ -51,7 +51,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/NombreC"
+            android:id="@+id/nombreC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/txtCodP"
@@ -65,7 +65,7 @@
             android:id="@+id/fechaEnt"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_below="@id/NombreC"
+            android:layout_below="@id/nombreC"
             android:textColor="@color/black"
             android:text="20 de Sep.2023 - 5:30pm"
             android:textSize="15sp" />
