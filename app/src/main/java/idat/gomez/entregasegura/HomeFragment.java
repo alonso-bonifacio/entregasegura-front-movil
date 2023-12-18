@@ -127,6 +127,7 @@ public class HomeFragment extends Fragment {
                    getActivity().runOnUiThread(
                            () -> {
                                if (entregas != null){
+                                   binding.vacio.setVisibility(View.INVISIBLE);
                                    mostrarLista(entregas);
                                } else {
                                    binding.listPendientes.setVisibility(View.INVISIBLE);
